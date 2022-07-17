@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1724ADF728798A9500C77025 /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1724ADF628798A9500C77025 /* TweetSentimentClassifier.mlmodel */; };
 		1724AE0D2879EE3300C77025 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1724AE032879EE0000C77025 /* SwifteriOS.framework */; };
 		1724AE0E2879EE3300C77025 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1724AE032879EE0000C77025 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		17BC3F912884D4B500CBA9F7 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 17BC3F902884D4B500CBA9F7 /* IQKeyboardManagerSwift */; };
 		AD9EC65020FE2EF4002AE9BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9EC64F20FE2EF4002AE9BF /* AppDelegate.swift */; };
 		AD9EC65220FE2EF4002AE9BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9EC65120FE2EF4002AE9BF /* ViewController.swift */; };
 		AD9EC65520FE2EF4002AE9BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9EC65320FE2EF4002AE9BF /* Main.storyboard */; };
@@ -94,6 +95,7 @@
 			files = (
 				1724AE0D2879EE3300C77025 /* SwifteriOS.framework in Frameworks */,
 				DB144425FCA6C5D81650291D /* Pods_Twittermenti.framework in Frameworks */,
+				17BC3F912884D4B500CBA9F7 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +184,9 @@
 			dependencies = (
 			);
 			name = Twittermenti;
+			packageProductDependencies = (
+				17BC3F902884D4B500CBA9F7 /* IQKeyboardManagerSwift */,
+			);
 			productName = Twittermenti;
 			productReference = AD9EC64C20FE2EF4002AE9BF /* Twittermenti.app */;
 			productType = "com.apple.product-type.application";
@@ -211,6 +216,9 @@
 				Base,
 			);
 			mainGroup = AD9EC64320FE2EF4002AE9BF;
+			packageReferences = (
+				17BC3F8F2884D4B500CBA9F7 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = AD9EC64D20FE2EF4002AE9BF /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -533,6 +541,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		17BC3F8F2884D4B500CBA9F7 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = exactVersion;
+				version = 6.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		17BC3F902884D4B500CBA9F7 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17BC3F8F2884D4B500CBA9F7 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD9EC64420FE2EF4002AE9BF /* Project object */;
 }
