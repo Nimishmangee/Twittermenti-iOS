@@ -28,7 +28,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func predictPressed(_ sender: Any) {
-        
+        //Currently it does nothing
+        //Decided by Angela
         
     }
     
